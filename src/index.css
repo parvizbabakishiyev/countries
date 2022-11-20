@@ -1,13 +1,48 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  font-family: system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: grid;
+  grid-template-columns: minmax(9.6rem, auto) minmax(auto, 118.4rem) minmax(
+      9.6rem,
+      auto
+    );
+  grid-template-rows: 9.6rem auto 6.4rem;
+  justify-items: center;
+  width: 100vw;
+  margin: 0 auto;
+  min-height: var(--vh);
+}
+
+@media screen and (max-width: 41rem) {
+  #root {
+    grid-template-columns: minmax(1.6rem, auto) minmax(auto, 118.4rem) minmax(
+        1.6rem,
+        auto
+      );
+    grid-template-rows: 6.4rem auto 6.4rem;
+  }
+}
+
+@media screen and (max-width: 25rem) {
 }

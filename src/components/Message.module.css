@@ -1,0 +1,39 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2.4rem;
+  justify-self: center;
+  margin-bottom: 20vh;
+  text-align: center;
+  width: 45rem;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.message__image {
+  width: 10.4rem;
+  height: 10.4rem;
+}
+
+.message__text {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 41rem) {
+  .message {
+    width: 30rem;
+  }
+
+  .message__image {
+    width: 8.4rem;
+    height: 8.4rem;
+  }
+
+  .message__text {
+    font-size: 2rem;
+  }
+}

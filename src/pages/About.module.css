@@ -1,0 +1,37 @@
+.about__source-code,
+.about__credits-header {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.about__credits-header {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.about__credits {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #000;
+  margin-bottom: 0.3rem;
+}
+
+.about__credits a:link,
+.about__credits a:visited {
+  text-decoration: underline;
+  color: #000;
+}
+
+.about__credits a:active,
+.about__credits a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.about__credits-link {
+  font-weight: 800;
+}

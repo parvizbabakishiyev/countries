@@ -1,0 +1,29 @@
+.nav__list-items {
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4.8rem;
+}
+
+.nav__list-items a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.nav__list-items a:hover,
+a:active {
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 41rem) {
+  .nav__list-items {
+    flex-direction: column;
+    row-gap: 3.2rem;
+    text-align: center;
+  }
+}

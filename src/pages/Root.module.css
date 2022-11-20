@@ -1,0 +1,20 @@
+.main-content {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: minmax(auto, 118.4rem);
+  grid-template-rows: minmax(min-content, max-content) auto minmax(
+      min-content,
+      max-content
+    );
+  grid-column: 2;
+  row-gap: 2.4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 41rem) {
+  .main-content {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+}

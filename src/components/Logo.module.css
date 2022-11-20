@@ -1,0 +1,24 @@
+.logo {
+  width: 3.5rem;
+  height: auto;
+}
+
+.logo__container {
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.8rem;
+  user-select: none;
+}
+
+@media screen and (max-width: 41rem) {
+  .logo {
+    width: 2.5rem;
+  }
+  .logo-container {
+    font-size: 1.6rem;
+  }
+}

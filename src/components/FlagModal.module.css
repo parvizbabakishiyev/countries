@@ -1,0 +1,34 @@
+.flag-modal {
+  position: fixed;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(var(--vw) * 0.4);
+  height: auto;
+  z-index: 100;
+}
+
+.flag-modal__animate-enter {
+  opacity: 0;
+}
+
+.flag-modal__animate-enter-active {
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+.flag-modal__animate-exit {
+  opacity: 1;
+}
+
+.flag-modal__animate-exit-active {
+  opacity: 0;
+  transition: all 300ms ease-out;
+}
+
+@media screen and (max-width: 41rem) {
+  .flag-modal {
+    width: calc(var(--vw) * 0.7);
+  }
+}
