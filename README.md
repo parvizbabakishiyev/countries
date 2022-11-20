@@ -1,2 +1,2 @@
 # countries
-This React project is about to get and display country information.
+This React project is about getting and displaying country information.
