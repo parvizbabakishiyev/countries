@@ -7,7 +7,7 @@ const About = () => {
       <p className={classes['about__source-code']}>
         Fun project for learning. View on{' '}
         <a
-          href='https://github.com/parvizbabakishiyev?tab=repositories'
+          href='https://github.com/parvizbabakishiyev/countries'
           target='_blank'
           rel='noreferrer'
         >
