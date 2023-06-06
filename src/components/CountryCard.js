@@ -22,7 +22,6 @@ const Country = props => {
   };
 
   const imgLoadHandler = () => {
-    console.log('onload fired');
     setImgLoaded(true);
   };
 
