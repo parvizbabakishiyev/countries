@@ -17,11 +17,9 @@ export const SavedContextProvider = props => {
 
   const toggleSaved = async countryInfo => {
     setIsSaving(true);
-    console.log(countryInfo);
     const matchedCountry = savedCountries.find(
       country => country.cca3 === countryInfo.cca3
     );
-    console.log(countryInfo);
     await new Promise(r => setTimeout(r, 500));
 
     if (matchedCountry) {
@@ -31,7 +29,6 @@ export const SavedContextProvider = props => {
         const newState = prevState.filter(country => {
           return countryInfo.cca3 !== country.cca3;
         });
-        console.log(newState);
         setIsSaving(false);
         return newState;
       });
@@ -40,7 +37,6 @@ export const SavedContextProvider = props => {
       localStorage.setItem(countryInfo.cca3, JSON.stringify(countryInfo));
       setSavedCountries(prevState => {
         const newState = prevState.concat(countryInfo);
-        console.log(newState);
         setIsSaving(false);
         return newState;
       });
