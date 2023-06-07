@@ -16,5 +16,5 @@ Visit [Wiki Countries](https://wikicountries-app.netlify.app/) for a live demo o
 Design of the webpage by [Gullar Babakishiyeva](https://www.behance.net/gullarbabakishiyeva)
 
 # Credits
-Country information is available via [REST Countries](https://restcountries.com/)
-Icons used in the project: [coolicons by Kryston Schwarze](https://github.com/krystonschwarze/coolicons)
+- Country information is available via [REST Countries](https://restcountries.com/)
+- Icons used in the project: [coolicons by Kryston Schwarze](https://github.com/krystonschwarze/coolicons)
