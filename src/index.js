@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { SavedContextProvider } from './store/saved-context';
 
-function calculateVh(e) {
+function calculateVh() {
   const viewportWidth = Math.max(
     document.documentElement.clientWidth,
     window.innerWidth || 0
